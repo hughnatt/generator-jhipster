@@ -18,7 +18,7 @@
 -%>
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { QRCodeModule } from 'angular2-qrcode';
+import { NgGridModule } from 'angular2-grid';
 <%_ if (enableTranslation) { _%>
 import { JhiLanguageService } from 'ng-jhipster';
 import { JhiLanguageHelper } from 'app/core';
@@ -44,7 +44,7 @@ const ENTITY_STATES = [
     imports: [
         <%= angularXAppName %>SharedModule,
         RouterModule.forChild(ENTITY_STATES),
-        QRCodeModule,
+        NgGridModule,
     ],
     declarations: [
         <%= entityAngularName %>Component,
